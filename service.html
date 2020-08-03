@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>豹造孕享</title>
+    <meta name="keywords" content="豹造孕育,孕享胎教手环,预防/缓解孕吐烦恼,乐享孕期健康生活" />
+    <meta name="description" content="豹造孕育,孕享胎教手环,预防/缓解孕吐烦恼,乐享孕期健康生活" />
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <script type="text/javascript" src="./static/js/jquery-1.8.3.min.js"></script>
+    <!-- <script src="./static/layui/layui.js"></script> -->
+    <!-- <link rel="stylesheet" href="./static/layui/css/layui.css"> -->
+    <link rel="stylesheet" type="text/css" href="./static/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css">
+</head>
+<style type="text/css" media="screen">
+    .header .nav ul a,
+    .header .lang {
+        color: #fff;
+    }
+
+    .menu .header .lang {
+        color: #000;
+    }
+
+    .menu .menu-toggle span {
+        background-color: #000 !important;
+    }
+
+    .box.a {
+        top: 0;
+        left: 0;
+    }
+
+    .box.b {
+        top: 0;
+        right: 0;
+    }
+
+    .box.c {
+        top: 50%;
+        left: 0;
+    }
+
+    .box.d {
+        top: 50%;
+        right: 0;
+    }
+
+    /* hy */
+    .serviceBGTXT {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-weight: 900;
+        font-size: 3vw;
+
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .c-wrap li {
+        position: relative;
+    }
+
+    .c-wrap li img {
+        width: 100%;
+    }
+
+    .c-wrap li .imgTxt {
+        position: absolute;
+        top: 3%;
+        left: 26%;
+        right: .6%;
+        bottom: 3%;
+    }
+
+    .c-wrap li .imgTxt .scale {
+        position: absolute;
+        top: 0;
+        left: -50%;
+        right: 0;
+        bottom: 0;
+        transform: scale(.5);
+        margin: auto;
+        width: 200%;
+        height: 200%;
+        /* background-color: red; */
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 1.2rem 2rem;
+        box-sizing: border-box;
+    }
+
+    .c-wrap li .imgTxt .scale p:first-child {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
+
+    .cWhite {
+        color: white !important;
+    }
+
+    .zlTxt {
+        font-size: 16px !important;
+    }
+
+    .QR {
+        display: block;
+        width: 100%;
+        height: 200px;
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .QR img {
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .pB {
+        margin-bottom: 50px !important;
+    }
+
+    .txtQR {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+</style>
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <!-- <div class="pr"> -->
+            <div class="nav-box">
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <section class="logo-wrap">
+                    <h1><a href="./index.html"><img data-color="" class="logo" alt="豹造孕享"
+                                src="./static/img/logo-black.png"></a></h1>
+                </section>
+                <section class="nav">
+                    <ul class="clearfix">
+                        <li><a href="./index.html">首页</a></li>
+                        <li><a href="./service.html">服务</a></li>
+                        <li><a href="./news.html">新闻</a></li>
+                        <li><a href="./product.html">产品中心</a></li>
+                        <li><a href="./about.html">关于我们</a></li>
+                    </ul>
+                </section>
+            </div>
+
+        </header>
+        <section class="service-banner bannerTitle">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./static/img/service/serviceBG.jpg">
+                <img width="100%" src="./static/img/service/serviceBG.jpg" alt="uploads/">
+                <div class="serviceBGTXT">PRENATAL EDUCATION FUNCTION</div>
+            </picture>
+        </section>
+        <section class="server-wrap">
+            <div class="container">
+                <h2>自助服务</h2>
+                <div class="relative widthAll minHeight">
+                    <div class="flow-list clearfix abCenter">
+                        <div class="box a">
+                            <div class="pr">
+                                <p>手环使用指南</p>
+                            </div>
+                            <div class="content-wrap guide">
+                                <h3 class="cWhite zlTxt">——— 豹造孕享手环使用指南 ———</h3>
+                                <div class="c-wrap">
+                                    <ul>
+                                        <li>
+                                            <img src="./static/img/service/step_1.png">
+                                            <div class="imgTxt">
+                                                <div class="scale">
+                                                    <p>1.使用手机下载安装豹造孕育app</p>
+                                                    <p>扫描二维码直接下载，</p>
+                                                    <p>或者在应用市场/App Store搜索“豹造孕育”，</p>
+                                                    <p>下载安装豹造孕育app(以下简称app)。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./static/img/service/step_2.png">
+                                            <div class="imgTxt">
+                                                <div class="scale">
+                                                    <p>2.佩戴</p>
+                                                    <p>把豹造孕享手环的接触板（两个金属电极）放在手腕内侧褶皱下两指处，</p>
+                                                    <p>位于两个前臂肌腱之间（手腕部的正中神经），根据适合自己的松紧度系上表带。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./static/img/service/step_3.png">
+                                            <div class="imgTxt">
+                                                <div class="scale">
+                                                    <p>3.开机</p>
+                                                    <p>长按设备控制键3秒，档位灯同时闪烁直至熄灭，设备开机。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <img src="./static/img/service/step_4.png">
+
+                                            <div class="imgTxt">
+                                                <div class="scale">
+                                                    <p>4.产品激活（连接手环和手机）</p>
+                                                    <p>打开豹造孕育APP,</p>
+                                                    <p>依次点击我的-设备连接-选择并配对蓝牙设备，完成产品激活。</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3 class="cWhite zlTxt">——— 豹造孕享手环功能说明 ———</h3>
+                                <div class="c-wrap">
+                                    <ul>
+                                        <li>
+                                            <img src="./static/img/service/group_1.png">
+                                        </li>
+                                        <li>
+                                            <img src="./static/img/service/group_2.png">
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3 class="cWhite zlTxt">——— 注意事项 ———</h3>
+                                <div class="c-wrap">
+                                    <ul>
+                                        <li>
+                                            <img src="./static/img/service/warn.png">
+                                        </li>
+                                        <li>
+                                            <p>1．使用设备前，请确保手部佩戴部位皮肤处于干燥状态，该产品无需涂抹导电液。</p>
+                                            <p>2．体内装有电子起搏器或者其他电子装置的禁止使用本产品。</p>
+                                            <p>3．个人体质不同，所处环境不同，设备的导电性可能会有差异，影响到产品的效果。一般可以通过提升档位、适当系紧表带改善效果。</p>
+                                            <p>4．使用本产品时手腕会有轻微的麻刺感，这是正常反应。偶尔有用户反应在电极处会有瘙痒感或过敏，用户可以换到另侧手腕。通常瘙痒和过敏在24小时内会消失。
+                                            </p>
+                                            <p>5．本产品可以正常使用的温度环境是-10℃--50℃.应远离高温或明火。</p>
+                                            <p>6．为延长使用寿命，充电完成后应拔掉电源插头。</p>
+                                            <p>7．产品在使用过程中可能会产生一定的电磁干扰，如发现对其他精密生命监护仪器的干扰，请立即停止使用。</p>
+                                            <p>8．废电池请妥善处理，切勿随意丢弃，污染环境及水源。</p>
+                                            <p>9．产品报废时，请按照一般电子产品报废的规定处理。</p>
+                                            <p>10．本产品不可与高频手术设备同时连接到一个患者，在刺激器电极处可能引起烧伤并可能损坏设备。</p>
+                                            <p>11．使用设备时，不可靠近短波或微波治疗设备（距离：1m），可能引起刺激器的输出不稳定。</p>
+                                            <p>12．请勿靠近胸部使用电极，可能引起心脏纤颤的危险。</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box b">
+                            <div class="pr">
+                                <p>下载中心</p>
+                            </div>
+                            <div class="content-wrap down">
+                                <div class="c-wrap clearfix">
+                                    <div class="table-wrap">
+                                        <div class="down-list">
+
+                                            <a class="QR" href="javascript:;">
+                                                <img src="./static/img/service/QR.png" alt="">
+                                            </a>
+                                            <p class="txtQR cWhite">
+                                                <<豹造孕育APP-扫码下载>>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box c">
+                            <div class="pr">
+                                <p>常见问题</p>
+                            </div>
+                            <div class="content-wrap problem">
+                                <div class="c-wrap pB">
+                                    <dl>
+                                        <dt>1.豹造孕享手环是什么？<span class="fr">+</span></dt>
+                                        <dd class="txtIndent">
+                                            豹造孕享手环是针对孕妇妊娠反应而研发的智能穿戴设备，它是一款佩戴在手腕上的时尚手环，能有效预防和缓解孕妇呕吐、恶心和厌食症状。</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>2.怎么预防和缓解孕吐呢（原理）？<span class="fr">+</span></dt>
+                                        <dd class="txtIndent">
+                                            当孕妇因妊娠反应想要呕吐时，启动手环后，手环自动针对位于手腕内侧的“内关穴”发生特定频率的低频电脉冲，并通过腕部的正中神经到达大脑皮层的高级中枢，它们会调节来自各个不同通道导致神经性呕吐的信号，同时也会调节往返于胃部的迷走神经信号，阻止或者延缓大脑向胃部传输呕吐信号，从而减缓胃部异常蠕动的频率。达到减轻症状。同时该产品也适用于晕车、晕船、VR眩晕等。
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>3.有没有效果？<span class="fr">+</span></dt>
+                                        <dd class="txtIndent">
+                                            刺激内关穴抑制孕吐的方法是经过临床试验的，对孕妈是能够起到不同程度的缓解作用。在国外已经有十几年的应用，相关文献也有很多，相同方法的产品在国内的一些大医院也开始使用。
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>4.产品如何使用？<span class="fr">+</span></dt>
+                                        <dd class="txtIndent">
+                                            <p class="txtIndent">a.当感觉到眩晕或恶心时即可佩带并开启设备，当感觉恢复正常时可以关闭设备。</p>
+                                            <p class="txtIndent">b.针对有规律的妊娠反应可提前半小时至一小时佩带并开启设备。</p>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>5.产品的使用禁忌有哪些？<span class="fr">+</span></dt>
+                                        <dd class="txtIndent">
+                                            <p class="txtIndent">a.对金属接触过敏性体质者忌用。</p>
+                                            <p class="txtIndent">b.佩带心脏起搏器、体内血糖仪或人工耳蜗等植入性或外用医疗器械禁用。 </p>
+                                            <p class="txtIndent">c.佩带部位皮肤破损者慎用。</p>
+                                            <p class="txtIndent">d.癫痫病患者慎用。 </p>
+                                            <p class="txtIndent">e.各种出血性疾病出血期者。</p>
+                                            <p class="txtIndent">f.医生禁止的其他病症患者。</p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box d">
+                            <div class="pr">
+                                <p>售后服务</p>
+                            </div>
+                            <div class="content-wrap service">
+                                <div class="c-wrap">
+                                    <h3> 售 后 及 保 修 政 策</h3>
+                                    <p>尊敬的客户：</p>
+                                    <p class="txtIndent">感谢您使用我公司的豹造系列产品！</p>
+                                    <p class="txtIndent">为保证购买者的权益，豹造支持7天内无理由退货，一年内保修。</p>
+
+                                    <p>第一条总则</p>
+                                    <p class="txtIndent">客户在签收产品之后，符合下列条件的产品可以退换货：</p>
+                                    <p>1、7天无理由退换货，产品完好的，可向豹造发起7天无理由退货或换货申请；</p>
+                                    <p>2、产品质量问题，无法正常使用；</p>
+                                    <p>3、因快递物流原因，造成产品损坏，无法正常使用。</p>
+
+                                    <p>第二条 退换货说明</p>
+                                    <p>1、7天无理由退货说明</p>
+                                    <p class="txtIndent">
+                                        客户因个人喜好或后悔购买等主观原因退回的产品，应当完好。产品完好指产品能够保持原有品质、功能，包括产品本身、包装、配件及附带的产品合格证、使用说明书等齐全，不影响产品二次销售。客户基于查验需要而打开产品包装，或者为确认产品的品质、功能而进行合理、适当的试用不影响产品的完好。
+                                    </p>
+                                    <p class="txtIndent">对超出查验和试用需要而使用产品，导致产品产生明显的价值贬损，如产品磨损，缺少配件，控制器无法正常开机等，视为产品不完好</p>
+
+                                    <p>2、质量问题换货说明</p>
+                                    <p>1）如在使用过程中对产品部分材质或配件感到过敏或不适，退货需要提供照片或医院相关证明，明确认定过敏与使用产品有直接关系。</p>
+                                    <p>2）如出现产品发生性能故障，相关功能无法正常使用等问题，请提供相应照片或视频，以便售后处理。
+                                        质量问题换货的期限为15天，自客户签收产品或购买后的次日零时开始起算，满336小时为15天。</p>
+
+                                    <p>3、产品损坏退货说明</p>
+                                    <p class="txtIndent">
+                                        客户若当面签收产品，在未开箱情况下，如外包装出现明显破损、挤压，且产品外露，摇动有响声等，可当场拒签，并告知豹造售后。
+                                    </p>
+                                    <p class="txtIndent">若拆箱后发现产品破损，请在24小时内联系豹造售后，提供相应照片等证明，以便完成退换货。</p>
+
+                                    <p>第三条 退货费用</p>
+                                    <p class="txtIndent">
+                                        客户进行7天无理由退换货产品时，仅承担退回邮费；若因产品质量原因影响正常使用，或产品破损导致的退货，由豹造承担退回费用。
+                                    </p>
+
+                                    <p>第四条退款方式</p>
+                                    <p class="txtIndent">客户退货申请受理之后，消费金额将退回支付时使用的账户。</p>
+
+                                    <p>第五条 退货流程</p>
+                                    <p>1、申请退货：联系客服或拨打电话19112769635，提出申请；</p>
+                                    <p>2、售后审核：豹造售后对退货理由、图片凭证、购物凭证等进行审核；</p>
+                                    <p>3、退回产品：审核通过后，根据售后提供的退货地址退回产品；</p>
+                                    <p> 4、售后复核：签收产品，进行问题确认后，同意退货申请；</p>
+                                    <p>5、退款完成：退款款项退至客户的原支付账户。</p>
+
+                                    <p>第六条 维修服务</p>
+                                    <p class="txtIndent"> 豹造为客户提供一年内免费保修服务。</p>
+                                    <p class="txtIndent">
+                                        在产品正常使用，无人为原因损坏的情况下，自签收次日零时起，豹造提供一年内保修服务。如遇产品问题，客户联系豹造售后，提供相应情况说明及证明，在售后提供地址后退回维修。
+                                    </p>
+
+                                    <p>第七条不予退换货的情况</p>
+                                    <p class="txtIndent">若出现以下情况，则豹造不予退换货</p>
+                                    <p>1、自签收日起，超过7天，不予办理无理由退换货；</p>
+                                    <p>2、自签收日起，超过15天，不予办理质量问题换货；</p>
+                                    <p>3、自签收时间满24小时，不予办理破损退换货；</p>
+                                    <p>4、无法提供购物凭证，或查询不到购物记录，不予退换货；</p>
+                                    <p>5、因意外因素或人为原因（包括主观/非主观原因如浸水、震裂、摔坏、自行修改尺寸，过度折叠，高处跌落等）导致故障或损坏，不予退换货；</p>
+                                    <p>6、商品的外包装、附件、赠品、说明书不完整，发票缺失或涂改，不予退换货；</p>
+                                    <p>7、因不可抗力（如地震、火灾、雷击、电压不稳等）原因造成的故障或损坏，不予退换货；</p>
+                                    <p> 8、未经授权的维修、改动，破坏、涂改强制性产品认证标志、指示标贴、机器序列号等等不予退换货；</p>
+                                    <p>9、超过退货期限的产品，不予退换货。</p>
+                                    <p>（ 注：所呈现产品相关图片、信息、颜色仅供参考，所有产品以实物为准。）</p>
+
+                                    <p>温馨提示：</p>
+                                    <p>1、如需产品退换货，请联系豹造售后，提供相关情况说明，在售后提供退回地址后寄回产品，请勿在未告知的情况下，直接退货；</p>
+                                    <p>2、若有赠品，退货时，请将赠品随产品一同寄回，若赠品损坏或遗失，则在退款中扣除赠品金额；</p>
+                                    <p>3、退货时请先垫付退回费用，快递费将随产品退款一同退至原支付账户，请勿使用快递到付；</p>
+                                    <p>4、豹造售后联系方式：各平台客服，微信公众号“豹小贝”或拨打热线19112769635。</p>
+                                    <br>
+                                    <br>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- <footer id="footer">
+    <div class="container">
+       <div class="content-box clearfix">
+          <ul class="clearfix nav fl">
+              <li>
+                   <dd class="dt">关于我们 <i class="fa fa-sort-desc"></i></dd>
+                   <dd><a href="/category-9.html">关于豹造</a></dd>
+                   <dd><a href="/category-9.html#1">品牌故事</a></dd>
+              </li>
+              <li>
+                   <dd class="dt">在线商城 <i class="fa fa-sort-desc"></i></dd>
+                   <dd><a href="https://ruoshui.tmall.com/" target="_blank" rel="nofollow">天猫商城</a></dd>
+                   <dd><a href="https://mall.jd.com/index-838855.html" target="_blank" rel="nofollow">京东商城</a></dd>
+                   <dd><a href="show.php" target="_blank" rel="nofollow">亚马逊</a></dd>
+               </li>
+               <li>
+                   <dd class="dt">石墨烯产品 <i class="fa fa-sort-desc"></i></dd>
+                   <dd><a href="/category-2.html">轻颜嫩肤仪</a></dd>
+                   <dd><a href="/category-3.html">轻颜眼周仪</a></dd>
+              </li>
+              <li>
+                   <dd class="dt">新闻资讯 <i class="fa fa-sort-desc"></i></dd>
+                   <dd><a href="/category-7.html">公司新闻</a></dd>
+                   <dd><a href="/category-8.html">产品快讯</a></dd>
+              </li>
+
+              <li>
+                   <dd class="dt">联系方式 <i class="fa fa-sort-desc"></i></dd>
+                   <dd><a href="mailto:Moxi@moxigroup.com">Moxi@moxigroup.com</a></dd>
+              </li>
+              <li>
+                   <dd class="dt">友情链接 <i class="fa fa-sort-desc"></i></dd>
+                   <dd><a target="_blank" href="http://www.cqmxi.com">http://www.cqmxi.com</a></dd>
+                   <dd><a target="_blank" href="http://www.deluxe-family.com">http://www.deluxe-family.com</a></dd>
+              </li>
+          </ul>
+            <div class="fr contact">
+              <ul class="clearfix">
+                  <li>
+                     <span>热线电话</span>&nbsp;<p>023-68050637</p>
+                  </li>
+              </ul>
+            </div>
+        </div>
+       <div class="copyright-box clearfix">
+        <p>©2018 rossui. All rights reserved. 备案号：<a href="http://www.beian.miit.gov.cn" style="color: #868686;">渝ICP备13002694号-2</a> <a href="sitemap.xml" target="_blank" style="color: #868686;">网站地图</a></p>
+        <div class="flowme">
+           <strong>关注我们：</strong>
+           <a class="sina" target="_blank" href="http://sina.lt/f8d8"></a>
+           <a class="wechat" href="javascript:;"><img class="wx" src="./static/img/service/wx.jpg" alt="豹造微信公众号"></a>
+        </div>
+       </div>
+    </div>
+</footer> -->
+        <!-- <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1277697045'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s23.cnzz.com/z_stat.php%3Fid%3D1277697045%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script> -->
+        <script type="text/javascript" src="./static/js/base.js"></script>
+        <script>
+            // (function () {
+            //     var bp = document.createElement('script');
+            //     var curProtocol = window.location.protocol.split(':')[0];
+            //     if (curProtocol === 'https') {
+            //         bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+            //     } else {
+            //         bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+            //     }
+            //     var s = document.getElementsByTagName("script")[0];
+            //     s.parentNode.insertBefore(bp, s);
+            // })();
+        </script>
+
+
+    </div>
+    <script type="text/javascript">
+        $(".logo").attr('src', 'static/img/logo-white.png');
+        var a = ".box.a",
+            b = ".box.b",
+            c = ".box.c",
+            d = ".box.d",
+            b_w = $('.flow-list').width();
+
+        $(a).click(function (event) {
+            if ($(this).width() != b_w) {
+                $(this).addClass('on').siblings('.box').removeClass('on');
+                $(this).find('.content-wrap').fadeIn().parent('.box').siblings('.box').find('.content-wrap')
+                    .fadeOut();
+                $(this).css('zIndex', 6);
+                $(this).stop().animate({
+                    width: "100%",
+                    height: "350px",
+                    top: "240px",
+                    left: 0
+                }, function () {
+                    var _top = $(".box.a").height() + $(".flow-list").width() * 0.005;
+                    $(".box.b").css({
+                        width: "33%",
+                        left: 0,
+                        top: 0
+                    });
+                    $(".box").stop().animate({
+                        width: "33%",
+                        left: "33.5%",
+                        top: 0
+                    })
+                    $(".box.d").stop().animate({
+                        width: "33%",
+                        right: 0,
+                        top: 0
+                    })
+                    $(".box.b,.box.c,.box.d").css({
+                        height: '230px',
+                        zIndex: 1
+                    });
+                    $(".box.d").css({
+                        left: 'unset'
+                    });
+                    $(".server-wrap .container").css({
+                        height: $(this).find('.content-wrap').height() + 120 + 300
+                    });
+                });
+
+            }
+        });
+
+        $(b).click(function (event) {
+            if ($(this).width() != b_w) {
+                $(this).addClass('on').siblings('.box').removeClass('on');
+                $(this).find('.content-wrap').fadeIn().parent('.box').siblings('.box').find('.content-wrap')
+                    .fadeOut();
+                $(this).css({
+                    'zIndex': 6
+                });
+                $(this).stop().animate({
+                    width: "100%",
+                    height: "350px",
+                    top: "240px",
+                    left: 0
+                }, function () {
+                    var _top = $(".box.b").height() + $(".flow-list").width() * 0.005;
+                    $(".box.a").css({
+                        width: "33%",
+                        left: 0,
+                        top: 0
+                    });
+                    $(".box.c").stop().animate({
+                        width: "33%",
+                        left: "33.5%",
+                        top: 0
+                    }, 100)
+                    $(".box.d").stop().animate({
+                        width: "33%",
+                        right: 0,
+                        top: 0
+                    }, 100)
+                    $(".box.a,.box.c,.box.d").css({
+                        height: '230px',
+                        zIndex: 1
+                    });
+                    $(".box.d").css({
+                        left: 'unset'
+                    });
+                    $(".server-wrap .container").css({
+                        height: $(this).find('.content-wrap').height() + 120 + 300
+                    });
+                });
+            }
+        });
+        $(c).click(function (event) {
+            if ($(this).width() != b_w) {
+                $(this).addClass('on').siblings('.box').removeClass('on');
+                $(this).find('.content-wrap').fadeIn().parent('.box').siblings('.box').find('.content-wrap')
+                    .fadeOut();
+                $(this).css({
+                    'zIndex': 6
+                });
+
+                $(this).stop().animate({
+                    width: "100%",
+                    height: "auto",
+                    top: "240px",
+                    left: 0
+                }, function () {
+                    var _top = $(".box.b").height() + $(".flow-list").width() * 0.005;
+                    $(".box.a").css({
+                        width: "33%",
+                        left: 0,
+                        top: 0
+                    });
+                    $(".box.b").stop().animate({
+                        width: "33%",
+                        left: "33.5%",
+                        top: 0
+                    }, 100)
+                    $(".box.d").stop().animate({
+                        width: "33%",
+                        right: 0,
+                        top: 0
+                    }, 100)
+                    $(".box.a,.box.b,.box.d").css({
+                        height: '230px',
+                        zIndex: 1
+                    });
+                    $(".box.d").css({
+                        left: 'unset'
+                    });
+                    $(".server-wrap .container").css({
+                        height: $(this).find('.content-wrap').height() + 120 + 300
+                    });
+                });
+
+            }
+        });
+
+        $(d).click(function (event) {
+            if ($(this).width() != b_w) {
+                $(this).addClass('on').siblings('.box').removeClass('on');
+                $(this).find('.content-wrap').fadeIn().parent('.box').siblings('.box').find('.content-wrap')
+                    .fadeOut();
+                $(this).css({
+                    'zIndex': 6
+                });
+                $(this).stop().animate({
+                    width: "100%",
+                    height: "350px",
+                    top: "240px",
+                    left: 0
+                }, function () {
+                    var _top = $(".box.b").height() + $(".flow-list").width() * 0.005;
+                    $(".box.a").css({
+                        width: "33%",
+                        left: 0,
+                        top: 0
+                    });
+                    $(".box.b").stop().animate({
+                        width: "33%",
+                        left: "33.5%",
+                        top: 0
+                    }, 100)
+                    $(".box.c").stop().animate({
+                        width: "33%",
+                        right: 0,
+                        top: 0,
+                        left: 'unset'
+                    }, 100)
+                    $(".box.a,.box.b,.box.c").css({
+                        height: '230px',
+                        zIndex: 1
+                    });
+                    $(".box.c").css({
+                        left: 'unset'
+                    });
+                    $(".server-wrap .container").css({
+                        height: $(this).find('.content-wrap').height() + 120 + 300
+                    });
+
+                });
+            }
+        });
+        $(".problem dt").click(function (event) {
+            $(this).next('dd').stop().slideToggle();
+            $(this).parents('dl').toggleClass('active');
+            if ($(this).parents('dl').hasClass('active')) {
+                $(this).find('span').text("-");
+            } else {
+                $(this).find('span').text("+");
+            }
+            abc(this);
+        });
+
+        function abc(obj) {
+            setTimeout(function () {
+                $(".server-wrap .container").css({
+                    height: $(obj).parents('.content-wrap').height() + 400
+                });
+            }, 400);
+
+        }
+        $(window).resize(function (event) {
+            if ($('.box').hasClass('on')) {
+                $(".server-wrap .container").css({
+                    height: $('.on .content-wrap').height() + 420
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

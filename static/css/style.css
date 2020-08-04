@@ -1000,9 +1000,9 @@ html.no-scroll body {
 }
 
 .max-con {
-  position: absolute;
+  /* position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
   width: 100%;
   max-width: 1100px;
 }
@@ -1227,10 +1227,14 @@ html.no-scroll body {
   color: #333
 }
 
+@media screen and (min-width: 1100px){
+  .max-con{
+    margin-left: calc(50% - 550px);
+  }
+}
 
 
-
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1099px) {
 
   .header .nav-box {
     position: absolute;
@@ -2155,4 +2159,20 @@ nav[aria-label] {
 }
 .aboutMl{
   padding-left: 10px;
+}
+
+/* 为滑动顺利做滚动条 */
+.main{
+  overflow-y: auto;
+}
+/* 隐藏滚动条 */
+/* Chrome和Safari浏览器 */
+::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+.main{
+  /* Firefox浏览器 */
+  scrollbar-width: none; /* Firefox */
+  /* IE浏览器 */
+  -ms-overflow-style: none; /* IE 10+ */
 }

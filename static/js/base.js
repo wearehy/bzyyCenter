@@ -1,4 +1,9 @@
+$('body').on('touchmove', function (e) {
+    e.preventDefault();
+});
+
 //header
+
 $('.menu-toggle').click(function (event) {
     var logo = $('.header .logo'),
         logocolor = logo.data('color'),
